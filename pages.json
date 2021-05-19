@@ -1,0 +1,173 @@
+{	
+	"easycom": {
+	        "autoscan": true,
+	        "custom": {
+	            // uni-ui 规则如下配置
+	            "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+	        }
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+				// "navigationBarTitleText": "考勤打卡",
+				// "navigationBarBackgroundColor": "transparent"//顶部背景色
+			}
+		},
+		{
+			"path": "pages/sign/sign",
+			"style": {
+				"navigationBarTitleText": "考勤打卡"
+			}
+		},
+		{
+			"path": "pages/rule/rule",
+			"style": {
+				"navigationBarTitleText": "考勤规则"
+			}
+		}
+	    ,{
+            "path" : "components/main/main-head",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/work/work",
+            "style" :                                                                                    
+            {
+				
+				"navigationStyle": "custom"
+                // "navigationBarTitleText": "",
+                // "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/record/record",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "记录查询",
+				"navigationBarBackgroundColor": "#00a0e9",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        },{
+            "path" : "pages/record/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "记录列表",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/chuchai/chuchai",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "出差",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/goOut/goOut",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "外出",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/approval/approval",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "审批",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/achievements/achievements",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "绩效",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/vacation/vacation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "请假",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/vacation/vacation_type",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/achievements/dailyEffect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "绩效详情",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#00a0e9"
+            }
+            
+        }
+    ],
+	"tabBar": {
+	    "color": "#7A7E83",
+        "selectedColor": "#00a0e9",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "height": "50px",
+        "fontSize": "10px",
+        "iconWidth": "24px",
+        "spacing": "3px",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/img/location1.png",
+	        "selectedIconPath": "static/img/location_check.png",
+	        "text": "打卡"
+	    }, {
+	        "pagePath": "pages/work/work",
+	        "iconPath": "static/img/work.png",
+	        "selectedIconPath": "static/img/work_check.png",
+	        "text": "工作台"
+	    }, {
+	        "pagePath": "pages/record/record",
+	        "iconPath": "static/img/search.png",
+	        "selectedIconPath": "static/img/search_check.png",
+	        "text": "记录查询"
+	    }]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "考勤APP",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
