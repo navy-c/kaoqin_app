@@ -116,7 +116,7 @@
 										</view>
 									</view>
 									<view v-else-if="is === null">
-										<view class="module CAsh"> 
+										<view class="module CAsh">
 											<view class="text">定位失败</view>
 											<view class="time">{{time}}</view>
 										</view>
