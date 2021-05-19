@@ -116,8 +116,8 @@
 										</view>
 									</view>
 									<view v-else-if="is === null">
-										<view class="module CGreen">
-											<view class="text">请检查位置信息</view>
+										<view class="module CAsh"> 
+											<view class="text">定位失败</view>
 											<view class="time">{{time}}</view>
 										</view>
 									</view>
